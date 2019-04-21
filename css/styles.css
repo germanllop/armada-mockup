@@ -147,11 +147,24 @@ button.navbar-toggler:focus{
     width: 100%;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
     -webkit-filter: blur(2px);
     filter: blur(2px);
     background: #88888821;
-    border-radius: 0;
+    border-radius: 0px;
+}
+
+.pre-blur{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: transparent;
+    border-left: 2px #8888880a solid;
+    border-radius: 0px;
+    box-shadow: -8px 0px 6px -6px black;
 }
 
 .profile-icons-text{
