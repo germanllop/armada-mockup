@@ -121,6 +121,7 @@ button.navbar-toggler:focus{
     padding: 15px;
     font-size: 16px;
     animation: slide-up 0.8s ease;
+    transition: all 0.7s ease;
 }
 .footer-message:after {
 	content: '';
@@ -135,6 +136,13 @@ button.navbar-toggler:focus{
 	border-left: 0;
 	margin-left: -5px;
 	margin-bottom: -10px;
+}
+
+.footer-message-off{
+    visibility: hidden;
+    opacity: 0;
+    bottom: 80px;
+    transition: all 0.7s ease;
 }
 
 .blur{
