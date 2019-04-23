@@ -1,5 +1,8 @@
 $(document).ready(function () {
     console.log("ready");
+    setTimeout(function(){
+      $('.footer-message').addClass("footer-message-off");
+    },3000);
     
   });
 

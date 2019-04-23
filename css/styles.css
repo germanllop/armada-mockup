@@ -280,16 +280,98 @@ button.navbar-toggler:focus{
 }
 
 .mixtones-list{
-    background-color: #ffffff;
+    background-color: transparent;
     width: 100%;
-    height: 375px;
+    height: 370px;
     box-shadow: 8px 8px 6px -6px black;
     overflow: auto;
     color: black;
 }
 
 .mixtones-item{
-    background-color: greenyellow;
-    width: 250px;
-    height: 250px;
+    margin-right: 5px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding: 3px;
+    display: inline-block;
+    width: 235px;
+    height: 176px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;       
+    transition: all 0.1s ease;
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px #464646;
+}
+
+.dot-status {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 0px solid white;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+.dot-status.off{
+    background: gray;
+}
+.dot-status.live{
+    background: red;
+}
+.dot-status.lobby{
+    background: greenyellow;
+}
+
+
+.mixtones-item.lobby{
+    background-image: url('../img/bg/lobby.png');
+}
+.mixtones-item.map.de_inferno{
+    background-image: url('../img/bg/de_inferno.png');
+}
+.mixtones-item.map.de_mirage{
+    background-image: url('../img/bg/de_mirage.png');
+}
+.mixtones-item.map.de_cache{
+    background-image: url('../img/bg/de_cache.png');
+}
+.mixtones-item.map.de_cbble{
+    background-image: url('../img/bg/de_cbble.png');
+}
+.mixtones-item.map.de_dust2{
+    background-image: url('../img/bg/de_dust2.png');
+}
+.mixtones-item.map.de_vertigo{
+    background-image: url('../img/bg/de_vertigo.png');
+}
+.mixtones-item.map.de_overpass{
+    background-image: url('../img/bg/de_overpass.png');
+}
+.mixtones-item.map.de_nuke{
+    background-image: url('../img/bg/de_nuke.png');
+}
+.mixtones-item.map.de_train{
+    background-image: url('../img/bg/de_train.png');
+}
+.mixtones-item:hover{
+    background-size: 105%;
+}
+
+.search-mixton{
+    background-color: rgba(255, 255, 255, 0.274);
+    border-color: rgba(255, 255, 255, 0.274);
+    border-radius: 0px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.search-mixton:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.274);
+    border-color: rgba(255, 255, 255, 0.274);
+    color: white;
 }
