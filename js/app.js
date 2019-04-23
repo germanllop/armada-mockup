@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    setTimeout(function () {
-        $('.footer-message').addClass("footer-message-off");
-    }, 3000);
-    setTimeout(function () {
-        $('.footer-message').removeClass("footer-message-off");
-    }, 4000);
-    setTimeout(function () {
-        $('.footer-message').addClass("footer-message-off");
-    }, 6000);
+    console.log("ready");
+    
+  });
+
+  $('.footer-armada').click(function(e){
+    $('.footer-message').removeClass("footer-message-off");
+  });
+
+  $('.footer-message').click(function(e){
+    $('.footer-message').addClass("footer-message-off");
   });
