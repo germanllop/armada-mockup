@@ -2,8 +2,9 @@ $(document).ready(function () {
     console.log("ready");
     setTimeout(function(){
       $('.footer-message').addClass("footer-message-off");
+      $('#collapseBanner').collapse('show');
     },3000);
-    $('#collapseBanner').collapse('show');
+    
   });
 
   $('.footer-armada').click(function(e){
