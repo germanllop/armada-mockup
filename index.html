@@ -20,164 +20,368 @@
 </head>
 
 <body>
-  <div class="container-fluid fullscreen">
-    <div class="row">
-      <div class="col"> <!--Start of content column-->
-        <nav class="navbar navbar-expand-lg bg-transparent"> <!-- Start of navbar -->
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Armada Offensive" width="200px"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon-bars">
-              <i class="fas fa-bars"></i>
+  <div class="container-fluid px-0" style="overflow:hidden;">
+    <div class="row no-gutters">
+      <div class="col d-flex flex-column px-4" style="height:100vh">
+
+        <div class="row"><!-- Start Navbar Row -->
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-transparent"><!-- Start of navbar -->            
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Armada Offensive" width="200px"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-bars">
+                  <i class="fas fa-bars"></i>
+                </span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link py-3" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-3" href="#">Jugadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-3" href="#">Equipos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-3" href="#">Servers</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-light">Ir al Lobby</button>
+            </nav> <!-- End of navbar -->
+          </div>
+        </div><!-- End Navbar Row -->
+
+        <div class="row my-3"><!-- Start Main Top Row -->
+          <div class="col-8">
+            <div w3-include-html="main-top-left.html"></div>
+          </div>
+          <div class="col-4">
+              <div w3-include-html="main-top-right.html"></div>
+          </div>
+        </div> <!-- End Main Top Row -->
+
+        <div class="row"> <!-- Start Search and Filter Row -->
+          <div class="input-group col pr-1 mb-1">
+            <span class="input-group-append  ml-0">
+              <div class="input-group-text"
+                style="color:white;border:1px rgba(255, 255, 255, 0.274);border-radius: 0px;background-color: rgba(255, 255, 255, 0.274);">
+                <i class="fa fa-search"></i></div>
             </span>
-          </button>
+            <input class="form-control search-mixton" type="text" placeholder="Busca tu mixton">
+          </div>
+          <div class="col-5 col-sm-5 col-md-3 col-lg-3 col-xl-2 pl-1">
+            <select class="form-control mixton-filter">
+              <option>Todos</option>
+              <option class="mixton-filter-option">Solo Lobbies</option>
+              <option>En Vivo</option>
+              <option>Finalizadas</option>
+            </select>
+          </div>
+        </div> <!-- End Search and Filter Row -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link py-3" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link py-3" href="#">Jugadores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link py-3" href="#">Equipos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link py-3" href="#">Servers</a>
-              </li>
-              
-            </ul>
-            
+        <div class="mixtones-list d-flex flex-wrap justify-content-between">
+          <div class="mixtones-item lobby">
+            Seleccionando Capitán
+            <p>Cusan</p>
+            <div class="dot-status lobby"></div>
           </div>
-          <button class="btn btn-outline-light">Ir al Lobby</button>
-        </nav> <!-- End of navbar -->
-        
-        
-        <div class="pt-5 px-5 pb-0"> <!--Start of Main Content-->
-          <div class="row"> 
-              <div class="col-8"><!-- Start of Main Top Left Content -->               
-                <div w3-include-html="main-top-left.html"></div>               
-              </div><!-- End of Main Top Left Content -->
-              <div class="col-4">
-                main top right
-              </div>
+          <div class="mixtones-item lobby">
+            Seleccionando Mapa
+            <div class="dot-status lobby"></div>
           </div>
-          <div class="row pt-3">
-              <div class="col">
-                <div class="row">
-                  <div class="input-group col-10 pr-1 mb-1">   
-                      <span class="input-group-append  ml-0">
-                          <div class="input-group-text" style="color:white;border:1px rgba(255, 255, 255, 0.274);border-radius: 0px;background-color: rgba(255, 255, 255, 0.274);"><i class="fa fa-search"></i></div>
-                      </span>                   
-                    <input class="form-control search-mixton" type="text" placeholder="Busca tu mixton">
-                    
-                  </div>
-                  <div class="col pl-1">
-                      <select class="form-control mixton-filter">
-                          <option >Todos</option>
-                          <option class="mixton-filter-option">Solo Lobbies</option>
-                          <option>En Vivo</option>
-                          <option>Finalizadas</option>
-                        </select>
-                  </div>
-                    
-                    
-                </div>
-                  
-                    
-                <div class="mixtones-list">
-                  <div class="mixtones-item lobby">
-                    Seleccionando Capitán
-                    <p>Cusan</p>
-                    <div class="dot-status lobby"></div>
-                  </div>
-                  <div class="mixtones-item lobby">
-                    Seleccionando Mapa
-                    <div class="dot-status lobby"></div>
-                  </div>
-                  <div class="mixtones-item map de_mirage">
-                    Jugando
-                    <div class="dot-status live"></div>
-                  </div>
-                  <div class="mixtones-item map de_train">
-                    Jugando
-                    <div class="dot-status live"></div>
-                  </div>
-                  <div class="mixtones-item map de_cache">
-                    Terminada
-                    <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_cbble">
-                    Jugando
-                      <div class="dot-status live"></div>
-                  </div>
-                  <div class="mixtones-item map de_vertigo">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_overpass">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_nuke">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_cache">
-                    Terminada
-                    <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_cbble">
-                    Jugando
-                      <div class="dot-status live"></div>
-                  </div>
-                  <div class="mixtones-item map de_vertigo">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_overpass">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_nuke">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_cache">
-                    Terminada
-                    <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_cbble">
-                    Jugando
-                      <div class="dot-status live"></div>
-                  </div>
-                  <div class="mixtones-item map de_vertigo">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_overpass">
-                    Terminada
-                      <div class="dot-status off"></div>
-                  </div>
-                  <div class="mixtones-item map de_nuke">
-                    Terminada
-                      <div class="dot-status off"></div>
+          <div class="mixtones-item map de_mirage">
+            Jugando
+            <div class="dot-status live"></div>
+          </div>
+          <div class="mixtones-item map de_train">
+            Jugando
+            <div class="dot-status live"></div>
+          </div>
+          <div class="mixtones-item map de_cache">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_cbble">
+            Jugando
+            <div class="dot-status live"></div>
+          </div>
+          <div class="mixtones-item map de_vertigo">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_overpass">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_nuke">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_cache">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_cbble">
+            Jugando
+            <div class="dot-status live"></div>
+          </div>
+          <div class="mixtones-item map de_vertigo">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_overpass">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_nuke">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_cache">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_cbble">
+            Jugando
+            <div class="dot-status live"></div>
+          </div>
+          <div class="mixtones-item map de_vertigo">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_overpass">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+          <div class="mixtones-item map de_nuke">
+            Terminada
+            <div class="dot-status off"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm col-md-4 col-lg-3 col-xl-2 d-flex flex-column" style="min-width:320px;height: 100vh;">
+        <div class="row p-3"> <!-- Start Profile Row -->
+          <div class="col">
+            <div class="profile-top">
+              <div class="row">
+                <div class="col-3 text-center m-auto">
+                  <div class="presence m-auto">
+                    <img src="img/profile.jpg" class="rounded-circle" alt="Conectado" width="64px">
+                    <div class="dot"></div>
                   </div>
                 </div>
-              </div>
-          </div>
-        </div><!--End of Main Content-->
-    
-        
-      </div> <!--End of content column-->
+                <div class="col">
+                  <div class="row">
+                    <div class="col-9">
+                      <h5 class="my-1">liga</h5>
+                      <p class="profile text-muted">Disponible</p>
+                    </div>
+                    <div class="col-1">
+                      <div class="dropdown">
+                        <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false" data-offset="-160,0">
+                          <i class="fas fa-gamepad"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Configuración</a>
+                          <a class="dropdown-item" href="#">Salir</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-left profile profile-icons-text">
+                        <span class="text-white">
+                          <a class="text-armada" href="#">
+                            <i class="fas fa-bell"></i>
+                          </a> 5&nbsp;&nbsp;&nbsp;
+                          <a class="text-armada" href="#">
+                            <i class="fas fa-user-plus"></i>
+                          </a> 1&nbsp;&nbsp;&nbsp;
+                          <a class="text-armada" href="#">
+                            <i class="fas fa-user-shield"></i>
+                          </a> 1&nbsp;&nbsp;&nbsp;
+                        </span>
+                      </p>
+                    </div>
 
-      <div class="social-full col col-sm col-md-4 col-lg-3 col-xl-2"> <!-- Start of social column-->
-        <div w3-include-html="social-column.html"></div>
-      </div> <!-- End of social column-->
-      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End Profile Row -->
+
+        <div class="row p-3"> <!-- Start Rank Row -->
+          <div class="col">
+            <div class="row text-center">
+              <div class="col">Rank <strong>B-</strong></div>
+              <div class="col">Puntos <strong>1200</strong></div>
+            </div>
+            <div class="row text-center">
+              <div class="col">SR <strong>1500</strong></div>
+              <div class="col">Serrano <strong>0.3</strong></div>
+            </div>
+          </div>
+        </div> <!-- End Rank Row -->
+
+        <div class="row px-3 p-3"> <!-- Start Search Row -->
+          <div class="col input-group">
+                  <span class="input-group-append">
+                    <div class="input-group-text search-friends">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </span>
+                  <input class="form-control search-friends" type="text" placeholder="Buscar amigos">
+          </div>
+        </div> <!-- End Search Row -->
+
+        <div class="friends-list d-flex flex-column px-3"> <!-- Start Friends List Row -->
+          <div class="row player ">
+            <div class="col-3">
+              <div class="presence-friends text-center">
+                <img src="img/profiles/profile2.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">PeruCo</h6>
+              <p class="text-muted my-0 pt-1">Disponible</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center">
+                <img src="img/profiles/profile3.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">Blas el Fenix</h6>
+              <p class="text-muted my-0 pt-1">Disponible</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile4.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">Chicom Reborn The Fenix</h6>
+              <p class="text-muted my-0 pt-1">Disponible</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile5.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">Fenix El Apoyo Moral</h6>
+              <p class="text-muted my-0 pt-1">Disponible</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile6.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">Reborn</h6>
+              <p class="text-muted my-0 pt-1">Disponible</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile7.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">Eduv1ce¨</h6>
+              <p class="text-muted my-0 pt-1">Disponible</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile8.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends dot-off"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">BenJito Bebe</h6>
+              <p class="text-muted my-0 pt-1">Offline</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile9.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends dot-off"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">Gamble * CORSAIR</h6>
+              <p class="text-muted my-0 pt-1">Offline</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile10.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends dot-off"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">SOLO</h6>
+              <p class="text-muted my-0 pt-1">Offline</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile11.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends dot-off"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">Comi Reborn</h6>
+              <p class="text-muted my-0 pt-1">Offline</p>
+            </div>
+          </div>
+          <div class="row player">
+            <div class="col-3">
+              <div class="presence-friends text-center m-auto">
+                <img src="img/profiles/profile12.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                <div class="dot-friends dot-off"></div>
+              </div>
+            </div>
+            <div class="col pl-1">
+              <h6 class="my-0">✪Tuck</h6>
+              <p class="text-muted my-0 pt-1">Offline</p>
+            </div>
+          </div>
+        </div> <!-- End Friends List Row -->
+
+        <div class="pre-blur"></div>
+        <div class="blur"></div>
+
+      </div>
     </div>
-
     <div class="footer-armada"></div>
     <div class="footer-message">
       <p class="text-justify">
@@ -185,7 +389,7 @@
         Este es un mensaje del cuy de Armada Offensive, Bienvenidos!!!!
       </p>
     </div>
-  </div>
+</div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

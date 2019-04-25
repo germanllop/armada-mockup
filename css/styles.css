@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -11,83 +10,66 @@
     }
 }
 
-body{
+body {
     font-family: 'Roboto Condensed', sans-serif;
-    color:white;
+    color: white;
     background-image: url('../img/armada-back.jpg');
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
+    background-attachment: fixed;   
+    margin: 0;
+    padding: 0; 
 }
 
-html,body {
-    height: 100%;
-  }
 
-
-.navbar .nav-item a{
-    color:rgb(160, 160, 160);
+.navbar .nav-item a {
+    color: rgb(160, 160, 160);
     border-bottom: 3px solid transparent;
     font-size: 20px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border-color: white;
 }
 
-.navbar-toggler-icon-bars{
+.navbar-toggler-icon-bars {
     color: white;
 }
 
-button.navbar-toggler:focus{
-     outline: 1px none; 
+button.navbar-toggler:focus {
+    outline: 1px none;
 }
 
-.navbar .nav-item a:hover{
-    color:white;
+.navbar .nav-item a:hover {
+    color: white;
     border-bottom: 3px solid #cc99cc;
 }
 
-.navbar li.active a{
-    color:white;
+.navbar li.active a {
+    color: white;
     border-bottom: 3px solid #cc99cc;
 }
 
-.navbar{
-    height: 100px;
-    /*border: 1px solid white;*/
-}
-
-.navbar-nav{
-  height: 60px;
-}
-
-.profile-top{
+.profile-top {
     border: 0px solid white;
-    padding-top:16px; 
-    padding-bottom:16px;
-    
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
-.profile{
+.profile {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 20px
 }
 
-.social-full{
-    min-width: 318px;
-}
-
-.presence{
+.presence {
     height: 64px;
     width: 64px;
     position: relative;
 }
 
-.text-armada{
-    color:#ffffff;
+.text-armada {
+    color: #ffffff;
 }
 
 .dot {
@@ -102,19 +84,19 @@ button.navbar-toggler:focus{
 }
 
 .footer-armada {
-    position:fixed;
-    left:0;
-    bottom:0;
-    margin:0;
-    width:45px;
-    height:45px;
-    background:url('../img/armada-cuy-mini.png') no-repeat bottom right;
-    background-size:100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 45px;
+    height: 45px;
+    background: url('../img/armada-cuy-mini.png') no-repeat bottom right;
+    background-size: 100%;
     z-index: 100;
     cursor: pointer;
 }
 
-.footer-message{
+.footer-message {
     cursor: pointer;
     position: fixed;
     left: 25px;
@@ -123,7 +105,7 @@ button.navbar-toggler:focus{
     min-height: 100px;
     max-height: 400px;
     width: 335px;
-    background: #ffffff35;
+    background: #000000be;
     z-index: 200;
     border-radius: 3px;
     padding: 15px;
@@ -131,29 +113,30 @@ button.navbar-toggler:focus{
     animation: slide-up 0.8s ease;
     transition: all 0.7s ease;
 }
+
 .footer-message:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 10%;
-	width: 0;
-	height: 0;
-	border: 10px solid transparent;
-	border-top-color: #ffffff35;
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -5px;
-	margin-bottom: -10px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #000000be;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -5px;
+    margin-bottom: -10px;
 }
 
-.footer-message-off{
+.footer-message-off {
     visibility: hidden;
     opacity: 0;
     bottom: 80px;
     transition: all 0.7s ease;
 }
 
-.blur{
+.blur {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -166,7 +149,7 @@ button.navbar-toggler:focus{
     border-radius: 0px;
 }
 
-.pre-blur{
+.pre-blur {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -179,25 +162,27 @@ button.navbar-toggler:focus{
     box-shadow: -8px 0px 6px -6px black;
 }
 
-.profile-icons-text{
+.profile-icons-text {
     font-size: 14px;
 }
 
 .dropdown-toggle::after {
     display: none;
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
     cursor: pointer;
 }
 
-
-.search-friends{
+.search-friends {
     background-color: black;
     border-color: transparent;
     border-radius: 0px;
+    border-width: 0px;
+    color: white;
 }
 
-.search-friends:focus{
+.search-friends:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
     background-color: black;
@@ -205,7 +190,7 @@ button.navbar-toggler:focus{
     color: white;
 }
 
-.presence-friends{
+.presence-friends {
     height: 45px;
     width: 45px;
     position: relative;
@@ -220,86 +205,91 @@ button.navbar-toggler:focus{
     position: absolute;
     right: 0;
     bottom: 0;
-} 
-.dot-off {
-    background: gray;
-} 
-
-.friends-list{
-    height: 100%;
-    overflow: auto;
 }
 
-.friends-list::-webkit-scrollbar, .mixtones-list::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  .friends-list::-webkit-scrollbar-track, .mixtones-list::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  .friends-list::-webkit-scrollbar-thumb, .mixtones-list::-webkit-scrollbar-thumb{
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  .friends-list::-webkit-scrollbar-thumb:hover, .mixtones-list::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+.dot-off {
+    background: gray;
+}
 
 
-.player:hover{
+
+.player:hover {
     background: #ffffff21;
     cursor: pointer;
 }
 
-.player{
+.player {
     padding: 15px 10px 15px 10px;
-    transition-duration:650ms; 
+    transition-duration: 650ms;
 }
 
-.carousel-caption-armada{
+.carousel-caption-armada {
     width: 300px;
-    height: 300px;
+    height: 100%;
     background-color: #ffffff59;
     position: absolute;
-    top:0px;
+    top: 0px;
     right: 0px;
     padding: 15px 20px;
-    
 }
 
-.carousel{
+.carousel {
     box-shadow: 8px 8px 6px -6px black;
 }
 
-.btn{
+.btn {
     border-radius: 0;
 }
 
-.mixtones-list{
-    height:100%;
-    min-height: 430px;
-    overflow:auto
+.friends-list {
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
-.mixtones-item{
+.friends-list::-webkit-scrollbar, .mixtones-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.friends-list::-webkit-scrollbar-track, .mixtones-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+.friends-list::-webkit-scrollbar-thumb, .mixtones-list::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+.friends-list::-webkit-scrollbar-thumb:hover, .mixtones-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.mixtones-list {
+    height: 100%;
+    min-height: 450px;
+    overflow: auto
+}
+
+.mixtones-item {
     margin-right: 5px;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 5px;
     padding: 3px;
-    width: 235px;
-    height: 176px;
+    width: 245px;
+    height: 184px;
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: 100%;       
+    background-size: 100%;
     transition: all 0.1s ease;
     color: white;
     position: relative;
     text-shadow: 2px 2px #464646;
-    vertical-align:top;
+    vertical-align: top;
 }
 
 .dot-status {
@@ -312,52 +302,63 @@ button.navbar-toggler:focus{
     top: 3px;
 }
 
-.dot-status.off{
+.dot-status.off {
     background: gray;
 }
-.dot-status.live{
+
+.dot-status.live {
     background: red;
 }
-.dot-status.lobby{
+
+.dot-status.lobby {
     background: greenyellow;
 }
 
-
-.mixtones-item.lobby{
+.mixtones-item.lobby {
     background-image: url('../img/bg/lobby.png');
 }
-.mixtones-item.map.de_inferno{
+
+.mixtones-item.map.de_inferno {
     background-image: url('../img/bg/de_inferno.png');
 }
-.mixtones-item.map.de_mirage{
+
+.mixtones-item.map.de_mirage {
     background-image: url('../img/bg/de_mirage.png');
 }
-.mixtones-item.map.de_cache{
+
+.mixtones-item.map.de_cache {
     background-image: url('../img/bg/de_cache.png');
 }
-.mixtones-item.map.de_cbble{
+
+.mixtones-item.map.de_cbble {
     background-image: url('../img/bg/de_cbble.png');
 }
-.mixtones-item.map.de_dust2{
+
+.mixtones-item.map.de_dust2 {
     background-image: url('../img/bg/de_dust2.png');
 }
-.mixtones-item.map.de_vertigo{
+
+.mixtones-item.map.de_vertigo {
     background-image: url('../img/bg/de_vertigo.png');
 }
-.mixtones-item.map.de_overpass{
+
+.mixtones-item.map.de_overpass {
     background-image: url('../img/bg/de_overpass.png');
 }
-.mixtones-item.map.de_nuke{
+
+.mixtones-item.map.de_nuke {
     background-image: url('../img/bg/de_nuke.png');
 }
-.mixtones-item.map.de_train{
+
+.mixtones-item.map.de_train {
     background-image: url('../img/bg/de_train.png');
 }
-.mixtones-item:hover{
+
+.mixtones-item:hover {
     background-size: 105%;
 }
 
-.search-mixton{
+.search-mixton {
     background-color: rgba(255, 255, 255, 0.274);
     border-color: rgba(255, 255, 255, 0.274);
     border-radius: 0px;
@@ -365,7 +366,7 @@ button.navbar-toggler:focus{
     margin-bottom: 5px;
 }
 
-.search-mixton:focus{
+.search-mixton:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.274);
@@ -375,13 +376,14 @@ button.navbar-toggler:focus{
     box-shadow: none;
 }
 
-.mixton-filter{
+.mixton-filter {
     border-color: rgba(255, 255, 255, 0.274);
     color: white;
     border-radius: 0px;
     background-color: rgba(255, 255, 255, 0.274);
 }
-.mixton-filter:focus{
+
+.mixton-filter:focus {
     border-color: rgba(255, 255, 255, 0.274);
     color: white;
     border-radius: 0px;
@@ -390,8 +392,7 @@ button.navbar-toggler:focus{
     box-shadow: none;
 }
 
-.mixton-filter option{
+.mixton-filter option {
     background-color: white;
     color: black;
 }
-
