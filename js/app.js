@@ -3,7 +3,7 @@ $(document).ready(function () {
     setTimeout(function(){
       $('.footer-message').addClass("footer-message-off");
     },3000);
-    
+    $('#collapseBanner').collapse('show');
   });
 
   $('.footer-armada').click(function(e){

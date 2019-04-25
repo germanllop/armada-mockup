@@ -155,8 +155,11 @@ button.navbar-toggler:focus {
     top: 0;
     right: 0;
     z-index: -2;
-    -webkit-filter: blur(2px);
     filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
     background: #88888821;
     border-radius: 0px;
 }
@@ -172,6 +175,8 @@ button.navbar-toggler:focus {
     border-left: 2px #8888880a solid;
     border-radius: 0px;
     box-shadow: -8px 0px 6px -6px black;
+    -webkit-box-shadow: -8px 0px 6px -6px black;
+    -ms-box-shadow: -8px 0px 6px -6px black;
 }
 
 .profile-icons-text {
@@ -196,6 +201,7 @@ button.navbar-toggler:focus {
 
 .search-friends:focus {
     -webkit-box-shadow: none;
+    -ms-box-shadow: none;
     box-shadow: none;
     background-color: black;
     border-color: transparent;
@@ -245,6 +251,8 @@ button.navbar-toggler:focus {
 
 .carousel {
     box-shadow: 8px 8px 6px -6px black;
+    -webkit-box-shadow: 8px 8px 6px -6px black;
+    -ms-box-shadow: 8px 8px 6px -6px black;
 }
 
 .btn {
@@ -378,12 +386,11 @@ button.navbar-toggler:focus {
 
 .search-mixton:focus {
     -webkit-box-shadow: none;
+    -ms-box-shadow: none;
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.274);
     border-color: rgba(255, 255, 255, 0.274);
     color: white;
-    /*box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5);*/
-    box-shadow: none;
 }
 
 .mixton-filter {
@@ -398,8 +405,9 @@ button.navbar-toggler:focus {
     color: white;
     border-radius: 0px;
     background-color: rgba(255, 255, 255, 0.274);
-    /*box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5);*/
-    box-shadow: none;
+    box-shadow: none;    
+    -webkit-box-shadow: none;
+    -ms-box-shadow: none;
 }
 
 .mixton-filter option {
