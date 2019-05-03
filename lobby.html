@@ -53,25 +53,22 @@
                   </li>
                 </ul>
               </div>
-              <button class="btn btn-outline-light d-none d-lg-block">Ir al Lobby</button>
+              <button class="btn btn-outline-light d-none d-lg-block">Público <i class="fa fa-lock-open"></i></button>
             </nav> <!-- End of navbar -->
           </div>
         </div><!-- End Navbar Row -->
 
         <div class="row no-gutters pl-3 pr-1"> <!-- Start Match Config Row -->
           <div class="col py-3">
-            <div class="row">
-              <div class="col"><h2>Lobby: Mejor de 1 - liga / AO15365</h2></div>
-              <div class="col text-right"><h4>Público <i class="fa fa-lock-open"></i></h4></div>
-            </div>
+            <h2>Lobby: AO15365 / Bo3 | Capitanes - liga </h2>
             <div class="row pb-3">
-              <div class="col-3">
+              <div class="col-2">
                 <p class="pt-2">Tipo de Mixtón</p>
                 <div class="btn-group btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
+                    <label class="btn btn-secondary">
                       <input type="radio" name="options" id="option1" autocomplete="off" checked> Bo1
                     </label>
-                    <label class="btn btn-secondary">
+                    <label class="btn btn-secondary active">
                       <input type="radio" name="options" id="option2" autocomplete="off"> Bo3
                     </label>
                     <label class="btn btn-secondary">
@@ -88,15 +85,16 @@
                     <label class="btn btn-secondary">
                       <input type="radio" name="options2" id="option2" autocomplete="off"> Random
                     </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options2" id="option2" autocomplete="off"> Libre
+                    </label>
                 </div>
               </div>
-              <div class="col-6">
-                <p class="pt-2">Selecciona 1 Mapa</p>
-                
-                
+              <div class="col-7">
+                <p class="pt-2">Selecciona 3 Mapas</p>
                 <div class="btn-group btn-group-toggle d-inline-flex flex-wrap" data-toggle="buttons">
-                    <label class="btn btn-secondary active d-flex align-items-center justify-content-center flex-shrink-1">
-                        <input type="checkbox" id="option1" autocomplete="off">Random
+                    <label class="btn btn-secondary flex-grow-0 flex-shrink-1 active d-flex align-items-center">
+                      <input type="checkbox" id="option2" autocomplete="off" checked>Random
                     </label>
                     <label class="btn btn-secondary flex-grow-0 flex-shrink-1 active">
                       <input type="checkbox" id="option2" autocomplete="off" checked><img src="img/maps/logo/de_mirage.png" alt="Mirage" width="35%">
@@ -125,6 +123,9 @@
                     <label class="btn btn-secondary flex-grow-0 flex-shrink-1">
                         <input type="checkbox" id="option10" autocomplete="off"><img src="img/maps/logo/de_vertigo.png" alt="Vertigo" width="35%">
                     </label>
+                    <label class="btn btn-secondary flex-grow-0 flex-shrink-1 d-flex align-items-center">
+                        <input type="checkbox" id="option2" autocomplete="off" checked>Votación
+                    </label>
                 </div>
 
               </div>
@@ -132,34 +133,246 @@
           </div>
         </div> <!-- End Match Config Row -->
         
-        <div class="d-flex" style="height: 100%;min-height: 450px; overflow: auto"> <!-- Start Search and Filter Row -->
-          <div class="d-flex flex-column flex-wrap flex-grow-1" style="background:red">Players
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
-            <p>player1</p>
+        <div class="d-flex" style="height: 100%;min-height: 450px; overflow: auto" > <!-- Start Players Locations Row -->
+          
+          <div class="d-flex flex-column flex-wrap col-6 px-0" style="background:rgba(129, 129, 129, 0.157);margin-right: 10px;padding-top: 59px;">
+            <img class="slick-img" src="img/badges/csgo-slick.png" alt="Terrorist" width="36px">
+            <div class="d-flex player-lobby">
+                    <div class="d-flex align-items-center">
+                          <img src="img/profile.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                    </div>
+                  <div class="pl-3">
+                    <h6 class="my-0">Liga</h6>
+                    <p class="text-danger font-weight-bold my-0 pt-1">Espectador / Lobby Leader</p>
+                  </div>
+            </div>
+            <div class="d-flex player-lobby">
+                <div class="d-flex align-items-center">
+                      <img src="img/profiles/profile2.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                </div>
+              <div class="pl-3">
+                <h6 class="my-0">PeruCo</h6>
+                <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+              </div>
+            </div>
+            <div class="d-flex player-lobby">
+                  <div class="d-flex align-items-center">
+                        <img src="img/profiles/profile3.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                  </div>
+                <div class="pl-3">
+                  <h6 class="my-0">Blas el Fenix</h6>
+                  <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+                </div>
+            </div>
+            <div class="d-flex player-lobby">
+                  <div class="d-flex align-items-center">
+                        <img src="img/profiles/profile4.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                  </div>
+                <div class="pl-3">
+                  <h6 class="my-0">Chicom Reborn The Fenix</h6>
+                  <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+                </div>
+            </div>
+            <div class="d-flex player-lobby">
+                <div class="d-flex align-items-center">
+                      <img src="img/profiles/profile5.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                </div>
+              <div class="pl-3">
+                <h6 class="my-0">Fenix El Apoyo Moral</h6>
+                <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+              </div>
+            </div>
+            <div class="d-flex player-lobby">
+                  <div class="d-flex align-items-center">
+                        <img src="img/profiles/profile6.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                  </div>
+                <div class="pl-3">
+                  <h6 class="my-0">Reborn</h6>
+                  <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+                </div>
+            </div>
+            <div class="d-flex player-lobby">
+                  <div class="d-flex align-items-center">
+                        <img src="img/profiles/profile7.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                  </div>
+                <div class="pl-3">
+                  <h6 class="my-0">Eduv1ce¨</h6>
+                  <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+                </div>
+            </div>
+            <div class="d-flex player-lobby">
+                  <div class="d-flex align-items-center">
+                        <img src="img/profiles/profile8.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                  </div>
+                <div class="pl-3">
+                  <h6 class="my-0">BenJito Bebe</h6>
+                  <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+                </div>
+            </div>
+            <div class="d-flex player-lobby">
+                  <div class="d-flex align-items-center">
+                        <img src="img/profiles/profile9.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                  </div>
+                <div class="pl-3">
+                  <h6 class="my-0">Gamble * CORSAIR</h6>
+                  <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+                </div>
+            </div>
+            <div class="d-flex player-lobby">
+                  <div class="d-flex align-items-center">
+                        <img src="img/profiles/profile10.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                  </div>
+                <div class="pl-3">
+                  <h6 class="my-0">SOLO</h6>
+                  <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+                </div>
+            </div>
+            <div class="d-flex player-lobby">
+                <div class="d-flex align-items-center">
+                      <img src="img/profiles/profile11.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                </div>
+              <div class="pl-3">
+                <h6 class="my-0">Comi Reborn</h6>
+                <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+              </div>
+            </div>
+            <div class="d-flex player-lobby">
+                <div class="d-flex align-items-center">
+                      <img src="img/profiles/profile12.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                </div>
+              <div class="pl-3">
+                <h6 class="my-0">✪Tuck</h6>
+                <p class="text-secondary my-0 pt-1">Espactador / No Asignado</p>
+              </div>
+            </div>
+            
           </div>
-          <div class="d-flex flex-grow-1" style="background:green">Team 1
-
-          </div>
-          <div class="col-3 flex-grow-1" style="background:blue">Team 2
-
+          <div class="d-flex flex-column flex-fill p-0" style="background:rgba(129, 129, 129, 0.157)">
+            <div class="flex-grow-1 d-flex">
+                <div class="d-flex flex-column col-6 m-0 p-0">
+                    <p class="text-center pt-2"><img src="img/badges/ct.png" alt="Counter Terrorist" width="36px"></p>
+                    <div class="d-flex player-lobby">
+                        <div>
+                          <div class="d-flex align-items-center">
+                                <img src="img/profile.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                          </div>
+                        </div>
+                        <div class="pl-3">
+                          <h6 class="my-0">Liga</h6>
+                          <p class="text-info my-0 pt-1">Jugador / Capitán / Lobby Leader</p>
+                        </div>
+                    </div>
+                    <div class="d-flex player-lobby">
+                      <div>
+                        <div class="d-flex align-items-center">
+                              <img src="img/profiles/profile3.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                        </div>
+                      </div>
+                      <div class="pl-3">
+                        <h6 class="my-0">Blas el Fenix</h6>
+                        <p class="text-info my-0 pt-1">Jugador</p>
+                      </div>
+                    </div>
+                    <div class="d-flex player-lobby">
+                        <div>
+                          <div class="d-flex align-items-center">
+                                <img src="img/profiles/profile5.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                          </div>
+                        </div>
+                        <div class="pl-3">
+                          <h6 class="my-0">Fenix El Apoyo Moral</h6>
+                          <p class="text-info my-0 pt-1">Jugador</p>
+                        </div>
+                    </div>
+                    <div class="d-flex player-lobby">
+                        <div>
+                          <div class="d-flex align-items-center">
+                                <img src="img/profiles/profile6.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                          </div>
+                        </div>
+                        <div class="pl-3">
+                          <h6 class="my-0">Reborn</h6>
+                          <p class="text-info my-0 pt-1">Jugador</p>
+                        </div>
+                    </div>
+                    <div class="d-flex player-lobby">
+                        <div>
+                          <div class="d-flex align-items-center">
+                                <img src="img/profiles/profile7.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                          </div>
+                        </div>
+                        <div class="pl-3">
+                          <h6 class="my-0">Eduv1ce¨</h6>
+                          <p class="text-info my-0 pt-1">Jugador</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column col-6 m-0 p-0">
+                      <p class="text-center pt-2"><img src="img/badges/tt.png" alt="Terrorist" width="36px"></p>
+                      <div class="d-flex player-lobby">
+                          <div>
+                            <div class="d-flex align-items-center">
+                                  <img src="img/profiles/profile2.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                            </div>
+                          </div>
+                          <div class="pl-3">
+                            <h6 class="my-0">PeruCo</h6>
+                            <p class="text-warning my-0 pt-1">Jugador / Capitán</p>
+                          </div>
+                      </div>
+                      <div class="d-flex player-lobby">
+                        <div>
+                          <div class="d-flex align-items-center">
+                                <img src="img/profiles/profile4.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                          </div>
+                        </div>
+                        <div class="pl-3">
+                          <h6 class="my-0">Chicom Reborn The Fenix</h6>
+                          <p class="text-warning my-0 pt-1">Jugador</p>
+                        </div>
+                      </div>
+                      <div class="d-flex player-lobby">
+                          <div>
+                            <div class="d-flex align-items-center">
+                                  <img src="img/profiles/profile8.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                            </div>
+                          </div>
+                          <div class="pl-3">
+                            <h6 class="my-0">BenJito Bebe</h6>
+                            <p class="text-warning my-0 pt-1">Jugador</p>
+                          </div>
+                      </div>
+                      <div class="d-flex player-lobby">
+                          <div>
+                            <div class="d-flex align-items-center">
+                                  <img src="img/profiles/profile9.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                            </div>
+                          </div>
+                          <div class="pl-3">
+                            <h6 class="my-0">Gamble * CORSAIR</h6>
+                            <p class="text-warning my-0 pt-1">Jugador</p>
+                          </div>
+                      </div>
+                      <div class="d-flex player-lobby">
+                          <div>
+                            <div class="d-flex align-items-center">
+                                  <img src="img/profiles/profile11.jpg" class="rounded-circle" alt="Conectado" width="45px">
+                            </div>
+                          </div>
+                          <div class="pl-3">
+                            <h6 class="my-0">Comi Reborn</h6>
+                            <p class="text-warning my-0 pt-1">Jugador</p>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="d-flex justify-content-center pb-3 pt-0">
+                <button class="btn btn-success btn-lg">INICIAR MIXTON</button>
+            </div>
           </div>
           
           
-
-        </div> <!-- End Search and Filter Row -->
+        </div> <!-- End Players Locations Row -->
 
         
       </div>
