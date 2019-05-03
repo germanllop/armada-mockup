@@ -1,10 +1,17 @@
 $(document).ready(function () {
     console.log("ready");
+    $('#collapseBanner').collapse('show');
     setTimeout(function(){
       $('.footer-message').addClass("footer-message-off");
-      $('#collapseBanner').collapse('show');
     },3000);
     
+  });
+
+  $('#toggler').click(function(e){
+    $('#collapseBanner').collapse('toggle');
+  });
+  $('#golobby').click(function(e){
+    window.location='./lobby.html';
   });
 
   $('.footer-armada').click(function(e){
